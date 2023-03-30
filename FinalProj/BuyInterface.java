@@ -13,7 +13,7 @@ public class BuyInterface {
     double change = TransactionHistory.userChangeRecord(productIDXint);
 
         System.out.println("Successful, your change is P"+df.format(change));
-        FOPmain.consumerInterface();
+        main.consumerInterface();
 
     }
 
