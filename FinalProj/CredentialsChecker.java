@@ -12,7 +12,7 @@ public class CredentialsChecker {
 	            if (tempPassword.equals(inputUsername)) {
 	                System.out.println("Account declined");
 	                System.out.println("Reason: Username already used");
-	                FOPmain.Start();
+	                main.Start();
 	            }
 	        }
 	        return inputUsername;
@@ -25,7 +25,7 @@ public class CredentialsChecker {
 	        if (inputPassword.length() < 5) {
 	            System.out.println("Account declined");
 	            System.out.println("Reason: Password is too short");
-	            FOPmain.Start();
+	            main.Start();
 	        }
 	        return inputPassword;
 
@@ -40,7 +40,7 @@ public class CredentialsChecker {
 	        }
 	        System.out.println("Account declined");
 	        System.out.println("Reason: Input Error (Type): [admin / consumer] only");
-	        FOPmain.Start();
+	        main.Start();
 	        return inputType;
 	    }
 
