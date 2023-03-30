@@ -39,7 +39,7 @@ public class TransactionHistory {
         for (int i = 0; i < THdate.size(); i++) {
             System.out.println(THdate.get(i)+"\t"+THname.get(i)+"\tP"+THprice.get(i)+"\t"+THqty.get(i)+"\t"+THconsPayment.get(i));
         }
-        FOPmain.adminInterface();
+        main.adminInterface();
     }
 
     public static double userChangeRecord(int productIdx) {
@@ -70,7 +70,7 @@ public class TransactionHistory {
 
                 if (outputTotal > userInputAmt) {
                     System.out.println("Money amount not sufficient.");
-                    FOPmain.consumerInterface();
+                    main.consumerInterface();
                 }
 
                 outputChange = userInputAmt - outputTotal;
