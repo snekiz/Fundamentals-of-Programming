@@ -72,7 +72,7 @@ public class GroceryList {
 			String newInfo = sc.next();
 			
 			Name.set(productUpdate, newInfo);
-			FOPmain.adminMaintenance();
+			main.adminMaintenance();
 		}
 		
 		else if (select == 2) {
@@ -89,7 +89,7 @@ public class GroceryList {
 			String newInfo = sc.next();
 			
 			Description.set(productUpdate, newInfo);
-			FOPmain.adminMaintenance();
+			main.adminMaintenance();
 		}
 		else if(select == 3) {
 			DisplayItems();
@@ -106,7 +106,7 @@ public class GroceryList {
             double newInfo = sc.nextDouble();
 
             Price.set(idxProduct, newInfo);
-            FOPmain.adminMaintenance();	
+            main.adminMaintenance();	
 	}
 		else if (select == 4) {
 			DisplayItems();
@@ -122,14 +122,14 @@ public class GroceryList {
 	         int newInfo = sc.nextInt();
 
 	         Quantity.set(idxProduct, newInfo);
-	         FOPmain.adminMaintenance();
+	         main.adminMaintenance();
 		}
 		else if (select == 5) {
 			FOPmain.adminInterface();
 		}
 		else {
 			System.out.println("Input Error. ");
-			FOPmain.adminMaintenance();
+			main.adminMaintenance();
 		}
 	}
 	public static void DeleteItem() {
@@ -151,7 +151,7 @@ public class GroceryList {
         Price.remove(deleteUserInput);
         Quantity.remove(deleteUserInput);
 
-        FOPmain.adminMaintenance();
+        main.adminMaintenance();
     }
 
 }
