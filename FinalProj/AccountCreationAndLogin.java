@@ -25,7 +25,7 @@ public class AccountCreationAndLogin {
         Types.add(inputType.toLowerCase());
         System.out.println("Account successfully created!");
         
-       FOPmain.Start();
+       main.Start();
     }
 
     public static void Login() {
@@ -64,11 +64,11 @@ public class AccountCreationAndLogin {
 
         if (Type.equals("admin")) {
             System.out.println(""+"Welcome admin "+Username+"!");
-           FOPmain.adminInterface();
+           main.adminInterface();
         }
         else if (Type.equals("consumer")) {
             System.out.println(""+"Welcome "+Username+"!");
-            FOPmain.consumerInterface();
+            main.consumerInterface();
         }
 
     }
